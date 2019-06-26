@@ -38,6 +38,6 @@ public class LoginTests extends BaseTest {
             .goToLoginPage()
             .loginToN11("", "")
             .verifyLoginUserName("Lütfen e-posta adresinizi girin.")
-            .verifyLoginPassword("WRONG MESSAGE FOR FAILURE!");
+            .verifyLoginPassword("Bu alanın doldurulması zorunludur. asda sasd");
     }
 }

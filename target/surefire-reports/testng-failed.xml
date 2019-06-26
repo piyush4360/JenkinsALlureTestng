@@ -5,13 +5,14 @@
     <listener class-name="utils.Listeners.TestListener"/>
     <listener class-name="utils.Listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="LoginTest(failed)">
+  <test thread-count="5" verbose="0" name="LoginTest(failed)">
     <classes>
       <class name="tests.LoginTests">
         <methods>
+          <include name="methodLevelSetup"/>
+          <include name="classLevelSetup"/>
           <include name="invalidLoginTest_EmptyUserEmptyPassword"/>
           <include name="teardown"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- tests.LoginTests -->
     </classes>

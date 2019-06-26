@@ -1,8 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 47.444 s <<< FAILURE! - in TestSuite
-invalidLoginTest_EmptyUserEmptyPassword(tests.LoginTests)  Time elapsed: 6.662 s  <<< FAILURE!
-java.lang.AssertionError: expected [WRONG MESSAGE FOR FAILURE!] but found [Bu alanın doldurulması zorunludur.]
-	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:57)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 24.9 sec <<< FAILURE!
+invalidLoginTest_EmptyUserEmptyPassword(tests.LoginTests)  Time elapsed: 4.111 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Bu alan?n doldurulmas? zorunludur. asda sasd] but found [Bu alan?n doldurulmas? zorunludur.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at pages.LoginPage.verifyLoginPassword(LoginPage.java:43)
+	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:41)
 

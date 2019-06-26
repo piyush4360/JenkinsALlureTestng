@@ -21,7 +21,7 @@ public class TestListener extends BaseTest implements ITestListener {
     }
 
     //Text attachments for Allure
-    @Attachment(value = "Page screenshot", type = "image/png")
+    @Attachment(value = "Screenshot", type = "image/png")
     public byte[] saveScreenshotPNG (WebDriver driver) {
         return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
     }
@@ -79,18 +79,19 @@ public class TestListener extends BaseTest implements ITestListener {
         if (driver instanceof WebDriver) {
             System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
             saveScreenshotPNG(driver);
+            System.out.println("creenshot saved");
         }
 
         //Save a log on allure.
         saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
 
         //Take base64Screenshot screenshot for extent reports
-        String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)driver).
-                getScreenshotAs(OutputType.BASE64);
+      //  String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)driver).
+             //   getScreenshotAs(OutputType.BASE64);
 
         //Extentreports log and screenshot operations for failed tests.
-        ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
-                ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+       // ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
+             //   ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
     }
 
     @Override

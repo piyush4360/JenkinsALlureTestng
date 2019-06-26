@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20643" started-at="2019-06-21T07:47:26Z" finished-at="2019-06-21T07:47:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20643" started-at="2019-06-21T07:47:26Z" finished-at="2019-06-21T07:47:47Z">
+      <class name="tests.LoginTests">
+        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:tests.LoginTests@4387b79e]" name="classLevelSetup" is-config="true" duration-ms="2434" started-at="2019-06-21T07:47:26Z" finished-at="2019-06-21T07:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelSetup -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.LoginTests@4387b79e]" name="methodLevelSetup" is-config="true" duration-ms="35" started-at="2019-06-21T07:47:29Z" finished-at="2019-06-21T07:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@4387b79e]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="14223" started-at="2019-06-21T07:47:29Z" description="Invalid Login Scenario with wrong username and password." finished-at="2019-06-21T07:47:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest_InvalidUserNameInvalidPassword -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.LoginTests@4387b79e]" name="methodLevelSetup" is-config="true" duration-ms="0" started-at="2019-06-21T07:47:43Z" finished-at="2019-06-21T07:47:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@4387b79e]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="3241" started-at="2019-06-21T07:47:43Z" description="Invalid Login Scenario with empty username and password." finished-at="2019-06-21T07:47:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@4387b79e]" name="teardown" is-config="true" duration-ms="623" started-at="2019-06-21T07:47:46Z" finished-at="2019-06-21T07:47:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
